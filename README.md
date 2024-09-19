@@ -1,1 +1,0 @@
-This is our team names app, done using reactjs in JavaScript
