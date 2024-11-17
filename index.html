@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blood Bank Diagnostic Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> /* Modify the scrollbar */
+    ::-webkit-scrollbar {
+        width: 12px; 
+    }
+    ::-webkit-scrollbar-track {
+        background: #2d2d2d; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #4a4a4a; 
+        border-radius: 10px; 
+    }
+    ::-webkit-scrollbar-thumb:hover {  /* Color while moving it */
+        background-color: #6a6a6a; 
+    }
+    .scrollable-element {
+        scrollbar-width: thin; 
+        scrollbar-color: #4a4a4a #2d2d2d; 
+    }
+</style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start bg-gradient-to-b from-black to-indigo-600 px-5 py-12">
+
+  <!-- Header -->
+  <header class="w-full bg-gray-900 py-6 shadow-lg">
+    <h1 class="text-4xl font-bold text-center text-white">
+      Team MANGO<br>Blood Bank Diagnostic Dashboard
+    </h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 w-full max-w-7xl">
+    
+    <!-- Team Members Section -->
+    <section class="flex flex-col items-center p-8 h-[40rem] bg-gray-800 bg-opacity-90 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold text-white mb-6">Meet Our Team</h2>
+      <ul class="space-y-4 w-full">
+        <li class="text-xl text-white bg-gray-700 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-opacity-80 transition duration-200 ease-in-out">Yeshas Krishna - Project Lead
+        <br><span class="text-lg text-gray-300">  Sequence diagram, presentation, Results in Progress programming,communication with MIS</span></li>
+        <li class="text-xl text-white bg-gray-700 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-opacity-80 transition duration-200 ease-in-out">Nelson Diaz - Back-end Dev
+          <br><span class="text-lg text-gray-300">  Some of report, QC Builder programming, Order Controls programming,hosting</span></li>
+        <li class="text-xl text-white bg-gray-700 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-opacity-80 transition duration-200 ease-in-out">Nestor Banda - Polishing/QA Testing
+          <br><span class="text-lg text-gray-300">  Class diagram, most of report, bug testing,QoL features</span></li>
+        <li class="text-xl text-white bg-gray-700 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-opacity-80 transition duration-200 ease-in-out">Alejandro Gutierrez Fiol - Front-end Dev
+          <br><span class="text-lg text-gray-300">  Use case diagram, initial webpages, user interface programming,setting up the  Database</span>
+        </li>
+      </ul>
+      <h4 class="text-sml text-white mb-15 text-center">
+        Meetings every MWF from 10 A.M. to 12 P.M.<br />
+        <a href="https://juniordiaz1059.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMmYzODY3OWExYTQyNDkwMmJjMGFmODBmYjIzMTM5MjAiLCJwIjoiaiJ9" class="underline text-blue-300">
+          Project Management Board(Jira)
+        </a>
+      </h4>
+    </section>
+
+    <!-- Schedules Section -->
+    <section class="flex flex-col items-center p-8 h-[40rem] bg-gray-800 bg-opacity-90 rounded-lg shadow-lg">
+      <h3 class="text-3xl font-bold text-white mb-6">Upcoming Schedules</h3>
+      <div class="overflow-y-scroll w-full"> 
+        <ul class="pl-5 space-y-4">
+          <!-- <li class="text-lg text-white space-y-6"><b>Additional Meeting</b>
+            <br>November 17, 4:00 - 6:00pm<br>Location: Library<br>Purpose: Finalize hosting, practice Stage 4 demo</li> -->
+          <li class="text-lg text-white space-y-6"><b>Regular Meeting</b>
+            <br>November 18, 10:00 - 12:00pm<br>Location: Library<br>Purpose: Test the system, work on Stage 4 presentation</li>
+          <li class="text-lg text-white space-y-6"><b>Additional Meeting</b>
+            <br>November 19, 11:00 - 1:50pm<br>Location: Library<br>Purpose: Work on Stage 4 report and presentation, system bug fixes</li>
+          <li class="text-lg text-white space-y-6"><b>Final Stage 4 Meeting</b>
+            <br>November 19, 4:00 - 6:50pm<br>Location: Library<br>Purpose: Finalize implementation and report, practice presentation</li>
+      </ul>
+    </div>
+    </section>
+
+    <!-- Recent Meetings Section --> 
+    <section class="flex flex-col items-center p-8 h-[35rem] bg-gray-800 bg-opacity-90 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold text-white mb-6">Recent Meetings</h2>
+        <div class="overflow-y-scroll w-full"> 
+            <ul class="pl-5 space-y-4">
+              <li class="text-lg text-white space-y-6"><b>Follow-up Meeting</b><br>November 17, 3:00 - 6pm<br>Location: Virtual<br>Present: Everyone<br>Complete hosting and minor issues with the code</li>
+              <li class="text-lg text-white space-y-6"><b>Follow-up Meeting</b><br>November 15, 2:00 - 4:30pm<br>Location: Library<br>Present: Everyone<br>Purpose: Meet with Medisim faculty on Zoom, implement feedback</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>November 15, 10:00 - 12:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Add finishing touches to QC Builder</li>
+              <li class="text-lg text-white space-y-6"><b>Additional Meeting</b><br>November 14, 11:00 - 1:00pm<br>Location: Library<br>Present: Yesh, Alejandro, Nelson<br>Purpose: Finalize Results in Progress</li>
+              <li class="text-lg text-white space-y-6"><b>Follow-up Meeting</b><br>November 13, 2:00 - 4:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Finish database access in Order Controls, work on printing results</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>November 13, 10:00 - 12:00pm<br>Location: Library<br>Present: Alejandro, Nelson<br>Purpose: Work on Results in Progress, work on hosting</li>
+              <li class="text-lg text-white space-y-6"><b>Additional Meeting</b><br>November 12, 11:00 - 1:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Work on Results in Progress</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>November 11, 10:00 - 12:00pm<br>Location: Library<br>Present: Nestor, Alejandro, Nelson<br>Purpose: Work on Results in Progress</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>November 8, 10:00 - 12:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Make QC Builder work with database</li>
+              <li class="text-lg text-white space-y-6"><b>First Stage 4 Meeting</b><br>November 6, 3:00 - 4:00pm<br>Location: Library<br>Present: Yesh, Alejandro, Nelson<br>Purpose: Start planning for Stage 4</li>
+              <li class="text-lg text-white space-y-6"><b>Final Stage 3 Meeting</b><br>November 2, 1:00 - 5:00pm, 8:00 - 11:00pm<br>Location: Discord (voice call)<br>Present: Everyone<br>Purpose: Finish Stage 3 presentation and report</li>
+              <li class="text-lg text-white space-y-6"><b>Final In-Person Stage 3 Meeting</b><br>November 1, 2:50 - 5:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Finalize QC Builder code, fix UI bugs, work on Order Controls code</li>
+              <li class="text-lg text-white space-y-6"><b>Additional Meeting</b><br>October 31, 11:00 - 1:50pm<br>Location: Library<br>Present: Everyone<br>Purpose: Work on QC Builder</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>October 30, 10:00 - 12:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Add reagent data to QC Builder & database</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>October 28, 10:00 - 12:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Work on QC Lot functionality</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>October 25, 10:00 - 12:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Work on Stage 3 document</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>October 23, 10:00 - 12:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Improve QC Builder UI</li>
+              <li class="text-lg text-white space-y-6"><b>Regular + Follow-up Meeting</b><br>October 21, 10:00 - 12:00pm; 2:00 - 3:00<br>Location: Library<br>Present: Everyone<br>Purpose: Get everyone on the branch, plan next steps for implementation</li>
+              <li class="text-lg text-white space-y-6"><b>First Stage 3 Meeting</b><br>October 18, 10:00 - 12:30pm<br>Location: Library<br>Present: Nelson, Alejandro<br>Purpose: Finish creating initial Blood Bank webpages</li>
+              <li class="text-lg text-white space-y-6"><b>Final Stage 2 Meeting</b><br>October 10, 11:00 - 7:00pmpm<br>Location: Library<br>Present: Everyone<br>Purpose: Finalize UML diagrams and presentation</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>October 7, 10:00 - 12:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Work on Stage 2 presentation</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>October 4, 10:00 - 12:00pm<br>Location: Library<br>Present: Alejandro, Nestor<br>Purpose: Work on Stage 2 diagrams</li>
+              <li class="text-lg text-white space-y-6"><b>Regular Meeting</b><br>September 27, 10:00 - 12:00pm<br>Location: Library<br>Present: Everyone<br>Purpose: Set up dependencies</li>
+              <li class="text-lg text-white space-y-6"><b>First Stage 2 Meeting</b><br>September 24, 12:40 - 1:50pm<br>Location: Library<br>Present: Yesh, Nelson, Alejandro<br>Purpose: Start working on Stage 2</li>    
+              <li class="text-lg text-white space-y-6"><b>Final Stage 1 Meeting</b><br>September 19, 4:10 - 6:50pm<br>Location: Library<br>Present: Everyone<br>Purpose: Finalize SRS and Slides</li>
+            </ul>
+        </div>
+    </section>
+
+  </main>
+  
+</body>
+</html>
